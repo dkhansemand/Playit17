@@ -1,0 +1,58 @@
+<!-- <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">MEAN Auth App</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-left">
+            <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/']">Home</a></li>
+            <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/terminal']">Games terminal</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li *ngIf="AuthService.LoggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/dashboard']">Dashboard</a></li>
+            <li *ngIf="AuthService.LoggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/profile']">Profile</a></li>
+
+            <li *ngIf="!AuthService.LoggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/login']">Login</a></li>
+            <li *ngIf="!AuthService.LoggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/register']">Register</a></li>
+            <li *ngIf="AuthService.LoggedIn()"><a href="#" (click)="onLogoutClick()">Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>-->
+    <nav class="navbar navbar-fixed-top">
+    <div class="container span6">
+        <div class="navbar-header">
+            <ul class="nav navbar-nav">
+              <img id="logo" [src]="logoImagePath" alt="vores logo">
+              
+              <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/']">Home</a></li>
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/history']">History</a></li>
+             <span class="pull-right">
+                <!--<li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/games']">Games</a></li>-->
+                <li [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/merch']">Pixel Merch</a></li>
+                <li *ngIf="!AuthService.LoggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/login']">Login</a></li>
+                <li *ngIf="AuthService.LoggedIn()"><a href="#" (click)="onLogoutClick()">Logout</a></li>
+             </span>
+              
+              
+              <!--<li *ngIf="AuthService.LoggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/profile']">Profile</a></li>-->
+
+              <!--<li *ngIf="!AuthService.LoggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/login']">Login</a></li>
+              <li *ngIf="!AuthService.LoggedIn()" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}"><a [routerLink]="['/register']">Register</a></li>-->
+              <!--<li *ngIf="AuthService.LoggedIn()"><a href="#" (click)="onLogoutClick()">Logout</a></li>
+-->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <div class="col-md-12 headerPic">
+        <img [src]="headerImagePath" alt="Pixelman billede">
+
+</div>

@@ -1,0 +1,36 @@
+.backHistory {
+    background-color: rgba(63,169,245,0.19);
+}
+.backHistory h1 {
+    font-family: pixelman;
+}
+
+.history {
+    margin: 25px 0;
+    background-color: lightgray;
+    box-shadow: 10px 10px 35px -4px rgba(0,0,0,0.75);
+}
+
+.histNav {
+    position: fixed;
+    right: 25px;
+    top:480px;
+}
+
+.histNav ul {
+    width:280px;
+    box-shadow: 10px 10px 35px -4px rgba(0,0,0,0.75);
+    padding: 0;
+}
+
+.histNav ul li {
+    list-style: none;
+    background-color: lightgray;
+    width: 280px;
+    padding: 25px;
+}
+
+.histNav li a {
+    color: black;
+    font-family: pixelman;
+}

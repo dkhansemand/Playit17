@@ -1,0 +1,29 @@
+#terminalGame{
+    margin: 20px 0;
+    padding: 20px 10px;
+    text-transform: uppercase;
+    border: 5px solid brown;
+}
+.terminal {
+    --color: #9C9CFF;
+    --background: #3939DE;
+}
+.terminal-output > div {
+    padding-top: 10px;
+}
+div.terminal-output div div, .cmd {
+    margin-top: 0px;
+}
+.cmd {
+    height: 1.5em;
+}
+
+#btnOverlayClose{
+    background-color: rgba(0,0,0,0.6);
+    color: #fff;
+    position: absolute;
+    top: 25px;
+    right: 350px;
+    font-size: 1.3em;
+    text-decoration: none;
+}
