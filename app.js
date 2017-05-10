@@ -49,6 +49,10 @@ app.get('/games/asteroids', (req, res) => {
     //res.sendFile(path.join(__dirname + '/games/asteroids/' + req.params.FILE))
 });
 
+app.get('/docs/pixelplay', (req, res) => {
+    res.sendFile(path.join(__dirname + '/docs/pixelplay.pdf'));
+});
+
 app.get('*', (req, res) => {
     res.send('Welcome the the API!');
 });

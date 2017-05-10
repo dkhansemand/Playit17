@@ -72,13 +72,14 @@ html, body {
     width: 1366px;
     padding: 0;
     margin-right: 10px;
-    border-bottom: 10px solid #349f5f;
+    border-bottom: 5px solid #349f5f;
 }
 
 /*--------------- Main content ---------------*/
 
 .terminalPladsen {
     background-color: rgba(63,169,245,0.19);
+    font-size: 1.2em;
 }
 /*.terminalen {
     width: 700px;

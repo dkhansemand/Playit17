@@ -112,6 +112,14 @@ export class GamesTerminalComponent implements OnInit {
                   case 'clear': 
                     term.clear()
                     break
+
+                  case 'documentation':
+                    //http://localhost:4000/docs/pixelplay
+                    window.open('http://localhost:4000/docs/pixelplay', '_blank')
+                    break;
+                  case 'guide':
+                    window.open('http://localhost:4000/docs/pixelplay', '_blank')
+                    break;
                   
                  case 'games':
                   //Output message to terminal with info about games

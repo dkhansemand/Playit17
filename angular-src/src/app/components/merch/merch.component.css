@@ -1,0 +1,26 @@
+.card-img-top {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+
+}
+
+.merchArea {
+    background-color: rgba(63,169,245,0.19);
+}
+
+.card{
+    background-color: #fff;
+    box-shadow: 10px 10px 35px -4px rgba(0,0,0,0.75);
+    padding:10px;
+    width: 250px;
+    height: 400px;
+    margin-right: 10px;
+}
+
+.cards{
+    margin-top: 30px;
+    margin-left: 80px;
+
+
+}
